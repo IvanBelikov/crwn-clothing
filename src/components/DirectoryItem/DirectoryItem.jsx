@@ -1,12 +1,21 @@
 import React from 'react';
+import { withRouter } from 'react-router';
 
 import './DirectoryItem.styles.scss';
 
-const DirectoryItem = ({ title, imageUrl, size = '' }) => {
+const DirectoryItem = ({
+  title,
+  imageUrl,
+  linkUrl,
+  history,
+  match,
+  size = '',
+}) => {
   return (
     <div
-      // If the size is not undefined, it sets with of item to 50%
+      // If the size is not undefined, it sets width of item to 50%
       className={`menu-item ${size}`}
+      onClick={() => history.push(`${match.url}${linkUrl}`)}
     >
       <div className="image-section">
         <span className="cover"></span>
@@ -20,4 +29,4 @@ const DirectoryItem = ({ title, imageUrl, size = '' }) => {
   );
 };
 
-export default DirectoryItem;
+export default withRouter(DirectoryItem);

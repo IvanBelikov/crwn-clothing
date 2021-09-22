@@ -9,15 +9,8 @@ import data from '../../directory.data';
 const Home = () => {
   return (
     <Directory>
-      {data.map(({ title, imageUrl, size }) => {
-        return (
-          <DirectoryItem
-            key={uuidv4()}
-            title={title}
-            imageUrl={imageUrl}
-            size={size}
-          />
-        );
+      {data.map((article) => {
+        return <DirectoryItem key={uuidv4()} {...article} />;
       })}
     </Directory>
   );

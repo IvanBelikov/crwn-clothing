@@ -5,7 +5,10 @@ import './Article.styles.scss';
 function Article({ price, imageUrl, name }) {
   return (
     <div className="article">
-      <img src={imageUrl} className="article-img" alt="Article" />
+      <div className="img-container">
+        <div className="cover"></div>
+        <img src={imageUrl} className="article-img" alt="Article" />
+      </div>
       <div className="article-description">
         <div className="article-info">
           <h3 className="article-name">{name}</h3>

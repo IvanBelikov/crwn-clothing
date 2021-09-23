@@ -1,0 +1,34 @@
+.article {
+  max-width: 300px;
+  max-height: 300px;
+
+  .article-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+  }
+
+  .article-description {
+    display: flex;
+    justify-content: space-between;
+
+    .article-info {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    .article-name {
+      cursor: pointer;
+    }
+
+    .cta-button {
+      padding: 10px 20px;
+      background-color: rgb(255, 169, 41);
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+    }
+  }
+}

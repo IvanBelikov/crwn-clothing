@@ -4,7 +4,7 @@ import { v4 as uuidv4 } from 'uuid';
 import Directory from '../../components/Directory';
 import DirectoryItem from '../../components/DirectoryItem';
 import './homepage.styles.scss';
-import data from '../../directory.data';
+import data from '../../sections.data';
 
 const Home = () => {
   return (

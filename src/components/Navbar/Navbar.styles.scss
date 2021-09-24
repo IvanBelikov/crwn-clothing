@@ -1,0 +1,26 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+
+  .logo {
+    width: 100px;
+  }
+
+  .navigation {
+    display: flex;
+    gap: 60px;
+  }
+
+  .navbar-option {
+    font-size: 20px;
+    text-decoration: none;
+    color: #000;
+    transition: color 0.1s ease-in-out;
+
+    &:hover {
+      color: rgb(236, 152, 25);
+    }
+  }
+}

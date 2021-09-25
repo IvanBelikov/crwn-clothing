@@ -1,0 +1,9 @@
+.form-input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  .input {
+    padding: 15px 20px;
+  }
+}

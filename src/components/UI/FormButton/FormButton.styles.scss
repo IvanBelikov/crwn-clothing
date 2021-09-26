@@ -9,7 +9,13 @@
   font-weight: bold;
 
   &.primary {
-    padding: 25px 30px;
+    background-color: rgb(236, 152, 25);
+    color: #fff;
+    border: none;
+
+    &:hover {
+      background-color: #000;
+    }
   }
 
   &:hover {

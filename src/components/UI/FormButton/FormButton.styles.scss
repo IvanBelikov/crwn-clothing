@@ -8,6 +8,10 @@
   font-size: 16px;
   font-weight: bold;
 
+  &.primary {
+    padding: 25px 30px;
+  }
+
   &:hover {
     background-color: rgb(236, 152, 25);
     border: none;
